@@ -1,1 +1,1 @@
-web: gunicorn chatgpt:DERMGPT
+web: gunicorn chatgpt:dermgpt
