@@ -1,1 +1,1 @@
-web:gunicorn --bind 0.0.0.0:$PORT chatgpt:dermgpt
+web:gunicorn --bind 0.0.0.0:$PORT chatgpt:app
