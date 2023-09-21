@@ -10,12 +10,12 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.indexes.vectorstore import VectorStoreIndexWrapper
 from langchain.llms import OpenAI
 from langchain.vectorstores import Chroma
-import constants
+# import constants
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-os.environ["OPENAI_API_KEY"] = constants.APIKEY
+os.environ["OPENAI_API_KEY"] = "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"
 
 PERSIST = False
 
