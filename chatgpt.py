@@ -39,9 +39,12 @@ chain = ConversationalRetrievalChain.from_llm(
 
 chat_history = []
 
-@app.route('/')
+@app.route("/")
 def getHome():
-    return "Hello World!"
+    data = {
+        "app" : "DermGPT"
+    }
+    return jsonify(data), 200
 
 @app.route('/ask', methods=['POST'])
 def ask_question():
