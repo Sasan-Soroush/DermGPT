@@ -1,1 +1,1 @@
-web: gunicorn main:chatgpt
+web: python chatgpt.py
