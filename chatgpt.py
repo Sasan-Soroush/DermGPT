@@ -59,4 +59,4 @@ def ask_question():
         return jsonify({'message': 'Bad request'}), 400
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
