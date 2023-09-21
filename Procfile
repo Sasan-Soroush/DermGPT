@@ -1,1 +1,1 @@
-web: python chatgpt.py
+web: gunicorn chatgpt:DERMGPT
