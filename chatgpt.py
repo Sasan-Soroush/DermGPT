@@ -39,6 +39,10 @@ chain = ConversationalRetrievalChain.from_llm(
 
 chat_history = []
 
+@app.route('/')
+def getHome():
+    return "Hello World!"
+
 @app.route('/ask', methods=['POST'])
 def ask_question():
     global chat_history
