@@ -15,7 +15,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 PERSIST = False
 
@@ -59,4 +59,4 @@ def ask_question():
         return jsonify({'message': 'Bad request'}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="localhost", port=8000, debug=True)
